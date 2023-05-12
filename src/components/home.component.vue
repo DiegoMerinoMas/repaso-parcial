@@ -1,13 +1,13 @@
 <template>
   <p class="title" style="margin-top: 3%">Popular post</p>
   <div class="container">
-    <pv-card v-for="(post, index) in popularPosts" :key="index" style="width: 21.9em">
+    <pv-card v-for="(popularPost, index) in popularPosts" :key="index" style="width: 21.9em">
       <template #header>
-        <img alt="user header" :src="post.photoUrl" width="350" height="350" />
+        <img alt="user header" :src="popularPost.photoUrl" width="350" height="350" />
       </template>
-      <template #title> {{ post.title }}</template>
+      <template #title> {{ popularPost.title }}</template>
       <template #footer>
-        <router-link :to="'/posts/' + post.id">
+        <router-link :to="'/posts/' + popularPost.id">
           <pv-button icon="pi pi-plus" label="See more" />
         </router-link>
       </template>
@@ -15,13 +15,13 @@
   </div>
   <p class="title">Our post</p>
   <div class="container">
-    <pv-card v-for="(post, index) in ourPosts" :key="index" style="width: 20em;">
+    <pv-card v-for="(ourPost, index) in ourPosts" :key="index" style="width: 20em;">
       <template #header>
-        <img alt="user header" :src="post.photoUrl" width="300" height="300" />
+        <img alt="user header" :src="ourPost.photoUrl" width="300" height="300" />
       </template>
-      <template #title>{{ post.title }}</template>
+      <template #title>{{ ourPost.title }}</template>
       <template #footer>
-        <router-link :to="'/posts/' + post.id">
+        <router-link :to="'/posts/' + ourPost.id">
           <pv-button icon="pi pi-plus" label="See more" />
         </router-link>
       </template>
@@ -39,7 +39,6 @@ export default {
       posts: [],
       popularPosts: [],
       ourPosts: [],
-      post: {},
       postService: null,
     };
   },
@@ -59,6 +58,7 @@ export default {
   },
 };
 </script>
+
 
 <style>
 .container {

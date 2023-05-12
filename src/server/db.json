@@ -1,81 +1,80 @@
 {
-    "food-trucks": [
-      {
-        "id": 1,
-        "name": "Bembos"
-      },
-      {
-        "id": 2,
-        "name": "KFC"
-      },
-      {
-        "id": 3,
-        "name": "Burguer King"
-      },
-      {
-        "id": 4,
-        "name": "Popeyes"
-      },
-      {
-        "id": 5,
-        "name": "Pizza hut"
-      }
-    ],
-    "posts": [
-      {
-        "id": 1,
-        "title": "Promo BBVA",
-        "resume": "10% de descuento pagando con tarjetas BBVA",
-        "photoUrl": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-clasico.jpg",
-        "foodtrucksId": 1,
-        "content": "Con tu promo BBVA obtén un 10% de descuento en toda nuestra carta durante el mes de mayo",
-        "likes": 45
-      },
-      {
-        "id": 2,
-        "title": "Sabor criollo",
-        "resume": "Deliciosa combinación de especias peruanas",
-        "photoUrl": "https://vidabohemia.net/wp-content/uploads/2021/07/kv-bucket-1024x1024.jpg",
-        "foodtrucksId": 2,
-        "content": "Ahora nuestro pollo viene sazonado en una combinación deliciosa de especias peruanas por el mismo precio",
-        "likes": 30
-      },
-      {
-        "id": 3,
-        "title": "Menú del rey",
-        "resume": "Cómodos precios todos los días",
-        "photoUrl": "https://openplaza.com.pe/sites/default/files/Peru/Angamos/Tiendas/Principal/burger%20king.jpg",
-        "foodtrucksId": 3,
-        "content": "Oye mi King, ¿pensando en qué comer hoy? 😏 Llegó el Menú del Rey desde S/6.90 con 4 opciones de burger para devorar 😌🤙 ¡Elige tu favorita! 🍔🔥",
-        "likes": 50
-      },
-      {
-        "id": 4,
-        "title": "Combo pop",
-        "resume": "3 piezas de pollo + 1 bebida regular",
-        "photoUrl": "https://cdn-images-ppys-prod.s3.amazonaws.com/media/catalog/product/f/e/festi-compartir.jpg",
-        "foodtrucksId": 4,
-        "content": "Llévate tres piezas de pollo más una bebida regular a tu elección a tan solo S/.19.90 soles. Promoción exclusiva en tienda durante el mes de mayo",
-        "likes": 67
-      },
-      {
-        "id": 5,
-        "title": "Ahorra o nunca",
-        "resume": "1 pizza americana grande",
-        "photoUrl": "https://openplaza.com.pe/sites/default/files/Peru/Piura/Tiendas/Principal/PIZZA%20HUT2.jpg",
-        "foodtrucksId": 5,
-        "content": "Llévate una pizza americana grande a tan solo S/19.00 y más S/7.00 agrégale una coca cola de litro",
-        "likes": 55
-      },
-      {
-        "id": 6,
-        "title": "Combo grande",
-        "resume": "Pizza grande + palitos + bebida 1L",
-        "photoUrl": "https://img.restaurantguru.com/r1ef-pizza-Pizza-Hut-2021-09-5142.jpg",
-        "foodtrucksId": 5,
-        "content": "Llévate una pizza americana grande más palitos más una bebida de litro a tu elección a tan solo S/29.90",
-        "likes": 69
-      }
-    ]
-  }
-  
+  "food-trucks": [
+    {
+      "id": 1,
+      "name": "Bembos"
+    },
+    {
+      "id": 2,
+      "name": "KFC"
+    },
+    {
+      "id": 3,
+      "name": "Burguer King"
+    },
+    {
+      "id": 4,
+      "name": "Popeyes"
+    },
+    {
+      "id": 5,
+      "name": "Pizza hut"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Promo BBVA",
+      "resume": "10% de descuento pagando con tarjetas BBVA",
+      "photoUrl": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-clasico.jpg",
+      "foodtrucksId": 1,
+      "content": "Con tu promo BBVA obtén un 10% de descuento en toda nuestra carta durante el mes de mayo",
+      "likes": 45
+    },
+    {
+      "id": 2,
+      "title": "Sabor criollo",
+      "resume": "Deliciosa combinación de especias peruanas",
+      "photoUrl": "https://vidabohemia.net/wp-content/uploads/2021/07/kv-bucket-1024x1024.jpg",
+      "foodtrucksId": 2,
+      "content": "Ahora nuestro pollo viene sazonado en una combinación deliciosa de especias peruanas por el mismo precio",
+      "likes": 30
+    },
+    {
+      "id": 3,
+      "title": "Menú del rey",
+      "resume": "Cómodos precios todos los días",
+      "photoUrl": "https://openplaza.com.pe/sites/default/files/Peru/Angamos/Tiendas/Principal/burger%20king.jpg",
+      "foodtrucksId": 3,
+      "content": "Oye mi King, ¿pensando en qué comer hoy? 😏 Llegó el Menú del Rey desde S/6.90 con 4 opciones de burger para devorar 😌🤙 ¡Elige tu favorita! 🍔🔥",
+      "likes": 62
+    },
+    {
+      "id": 4,
+      "title": "Combo pop",
+      "resume": "3 piezas de pollo + 1 bebida regular",
+      "photoUrl": "https://cdn-images-ppys-prod.s3.amazonaws.com/media/catalog/product/f/e/festi-compartir.jpg",
+      "foodtrucksId": 4,
+      "content": "Llévate tres piezas de pollo más una bebida regular a tu elección a tan solo S/.19.90 soles. Promoción exclusiva en tienda durante el mes de mayo",
+      "likes": 91
+    },
+    {
+      "id": 5,
+      "title": "Ahorra o nunca",
+      "resume": "1 pizza americana grande",
+      "photoUrl": "https://openplaza.com.pe/sites/default/files/Peru/Piura/Tiendas/Principal/PIZZA%20HUT2.jpg",
+      "foodtrucksId": 5,
+      "content": "Llévate una pizza americana grande a tan solo S/19.00 y más S/7.00 agrégale una coca cola de litro",
+      "likes": 55
+    },
+    {
+      "id": 6,
+      "title": "Combo grande",
+      "resume": "Pizza grande + palitos + bebida 1L",
+      "photoUrl": "https://img.restaurantguru.com/r1ef-pizza-Pizza-Hut-2021-09-5142.jpg",
+      "foodtrucksId": 5,
+      "content": "Llévate una pizza americana grande más palitos más una bebida de litro a tu elección a tan solo S/29.90",
+      "likes": 88
+    }
+  ]
+}
