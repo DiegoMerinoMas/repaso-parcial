@@ -1,7 +1,7 @@
 <template>
   <p class="title" style="margin-top: 3%">Popular post</p>
   <div class="container">
-    <pv-card v-for="(post, index) in posts" :key="index" style="width: 21.9em">
+    <pv-card v-for="(post, index) in popularPosts" :key="index" style="width: 21.9em">
       <template #header>
         <img alt="user header" :src="post.photoUrl" width="350" height="350" />
       </template>
@@ -15,13 +15,13 @@
   </div>
   <p class="title">Our post</p>
   <div class="container">
-    <pv-card style="width: 20em">
+    <pv-card v-for="(post, index) in ourPosts" :key="index" style="width: 20em;">
       <template #header>
-        <img alt="user header" src="../assets/unnamed.jpg" width="300" height="300" />
+        <img alt="user header" :src="post.photoUrl" width="300" height="300" />
       </template>
-      <template #title> Simple Card</template>
+      <template #title>{{ post.title }}</template>
       <template #footer>
-        <router-link to="/post">
+        <router-link :to="'/posts/' + post.id">
           <pv-button icon="pi pi-plus" label="See more" />
         </router-link>
       </template>
@@ -37,6 +37,8 @@ export default {
   data() {
     return {
       posts: [],
+      popularPosts: [],
+      ourPosts: [],
       post: {},
       postService: null,
     };
@@ -47,7 +49,8 @@ export default {
       .getAllPost()
       .then((response) => {
         this.posts = response.data;
-        this.posts = this.posts.sort((a, b) => b.likes - a.likes).slice(0, 3);
+        this.popularPosts = this.posts.sort((a, b) => b.likes - a.likes).slice(0, 3);
+        this.ourPosts = this.posts.slice(3, this.posts.length);
         console.log(this.posts);
       })
       .catch((error) => {
