@@ -32,6 +32,7 @@ export default {
         next();
     },
     created() {
+        this.$toast.success('¡Acción completada con éxito!');
         this.fetchPostData();
     },
     methods: {
